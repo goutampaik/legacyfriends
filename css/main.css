@@ -1,0 +1,420 @@
+@import url('./global.css');
+@import url('./footer.css');
+
+/*----------------- intro ---------------*/
+.intro {
+  /* position: relative; */
+  padding: 300px 0 200px 0;
+}
+
+.hero {
+  display: flex;
+}
+
+.hero-left {
+  width: 50%;
+}
+
+.hero-title img {
+  width: 100%;
+}
+
+.hero-left p {
+  font-family: var(--secondary-font-family);
+  font-size: 30px;
+  width: 80%;
+  margin: 30px 0;
+  font-weight: 700;
+}
+
+.hero-mint-btn {
+  width: 250px;
+  height: 70px;
+  background: var(--primary-color);
+  margin-right: 30px;
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-bottom: 5px solid #000000;
+  border-right: 5px solid #000000;
+  border-radius: 100px;
+  font-family: var(--primary-font-family);
+  font-size: 25px;
+  font-weight: 100;
+
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+}
+.hero-mint-btn .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -120%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.hero-mint-btn .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.hero-mint-btn:hover .tooltiptext {
+  visibility: visible;
+}
+.hero-join-discord-btn {
+  width: 250px;
+  height: 70px;
+  background: transparent;
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-bottom: 5px solid #000000;
+  border-right: 5px solid #000000;
+  border-radius: 100px;
+  font-family: var(--primary-font-family);
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.hero-right {
+  width: 50%;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+/*------------------  nft belts  --------------------*/
+.belt-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.belt-title img {
+  width: 40%;
+}
+
+.belt-box {
+  display: flex;
+}
+
+.belt-box .box-1 .img-1 img {
+  width: 200px;
+  height: 350px;
+  margin: 10px;
+  border-radius: 20px;
+  /* border: 5px solid var(--primary-color); */
+}
+
+.belt-box .box-1 .img-2 img {
+  width: 200px;
+  height: 350px;
+  margin: 10px;
+  border-radius: 20px;
+  border: 5px solid var(--primary-color);
+}
+
+.belt-box .box-2 {
+  margin-top: 30px;
+}
+
+.belt-box .box-2 .img-1 img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 20px;
+  border: 5px solid var(--primary-color);
+}
+
+.belt-box .box-2 .img-2 img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 20px;
+  border: 5px solid var(--primary-color);
+}
+
+.overlay {
+  display: none;
+}
+
+/*------------------  Roadmap Section  --------------------*/
+.roadmap{
+  background: var(--primary-color);
+  padding: 50px 0;
+}
+.roadmap-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.roadmap-title img{
+  width: 65%;
+}
+.roadmap-wrapper{
+  padding-top: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.roadmap-box{
+  width: 500px;
+}
+.main-box{
+  width: 500px;
+  height: 860px;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  box-shadow: rgb(0, 0, 0) 10px 10px 0px 0px;
+  border-radius: 10px;
+  padding: 150px 50px 50px 50px;
+
+}
+.main-box ul li{
+  list-style: none;
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  /* display: flex; */
+   /* align-items: center; */
+   margin-bottom: 10px;
+   font-size: 20px;
+}
+.main-box ul li svg{
+  margin-right: 10px;
+  width: 22px;
+  height: 22px;
+}
+.main-box-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.road-box-inner{
+  position: relative;
+}
+.road-map-img{
+  position: absolute;
+  top: -200px;
+  left: 100px;
+}
+.road-map-img img{
+  width: 300px;
+}
+.roadmap-twing{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.roadmap-twing img{
+  width: 70%;
+}
+/*------------------  Metatopia Section  --------------------*/
+.metatopia{
+  padding: 50px 0;
+}
+.metatopia-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.metatopia-title img{
+  width: 30%;
+}
+.metatopia .container p{
+  text-align: center;
+  margin: 30px 0;
+
+}
+.metatopia-img img {
+  width: 100%;
+}
+.pye-market{
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+}
+.pye{
+  width: 100%;
+  background: var(--primary-color);
+  border: 2px solid #000000;
+  box-shadow: rgb(0, 0, 0) 10px 10px 0px 0px;
+}
+.pye p{
+  font-family: var(--secondary-font-family);
+  font-weight: 900;
+  font-size: 26px;
+}
+/*------------------  Tier Section  --------------------*/
+.tier{
+  background: var(--primary-color);
+  padding: 50px 0;
+}
+.tier-box-all{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+.tier-box-all-2{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.tier-box{
+  background: #FFFFFF;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #000000;
+  box-shadow: rgb(0, 0, 0) 10px 10px 0px 0px;
+}
+.tier-box p{
+  font-family: var(--secondary-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.tier-description p{
+  text-align: center;
+  margin-top: 50px;
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 20px;
+}
+/*------------------  Team Section  --------------------*/
+.team {
+  padding: 50px 0;
+}
+
+.team-title h1 {
+  text-align: center;
+}
+
+.team-members {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.member {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.member-img img {
+  width: 100%;
+  border: 3px solid #000000;
+  border-radius: 5px;
+}
+
+.member h2 {
+  font-family: var(--primary-font-family);
+  font-weight: 100;
+  margin: 10px 0;
+}
+
+.member span {
+  font-weight: 900;
+  font-family: var(--secondary-font-family);
+}
+
+.team-social a img {
+  width: 30px;
+  margin: 10px;
+}
+
+.member-1 {
+  transform: rotate(-5deg);
+}
+
+.member-2 {
+  transform: rotate(5deg);
+}
+
+.member-3 {
+  transform: rotate(-5deg);
+}
+
+.member-4 {
+  transform: rotate(5deg);
+}
+
+.member-5 {
+  transform: rotate(-5deg);
+}
+
+.member-6 {
+  transform: rotate(5deg);
+}
+/*------------------  Group Section  --------------------*/
+.group-nft{
+  padding: 50px 0;
+}
+.team-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-title img{
+  width: 40%;
+}
+.group{
+  width: 80%;
+  margin: auto;
+  background: var(--primary-color);
+  border: 3px solid #000000;
+  border-radius: 10px;
+}
+.nfts img{
+  width: 100%;
+  margin-bottom: -5px;
+}
+.price-inner{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  margin-top: -50px;
+}
+.price-box{
+  width: 100%;
+  height: 100px;
+  background: #FFFFFF;
+  padding: 20px;
+  border: 2px solid #000000;
+  box-shadow: rgb(0, 0, 0) 10px 10px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price-box p{
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  text-align: center;
+  font-size: 20px;
+
+}
